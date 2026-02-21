@@ -1,4 +1,4 @@
-aHibernate Project-Student Management System
+Hibernate Project-Student Management System
 A full-stack web application built using Java Servlets, Hibernate ORM, and PostgreSQL. This project provides complete student record management with user authentication, registration, and CRUD operations through a clean browser-based interface.
 
 Table of Contents
@@ -10,15 +10,14 @@ Table of Contents
 6.How to Run
 7.Application Flow
 8.API Endpoints
-9.Known Issues and Notes
-
-1.Project Overview
+Known Issues and Notes
+Project Overview
 This application allows users to register and log in to a student management portal. Once authenticated, users can view all student records, edit existing entries, and delete records through an interactive modal-based interface. The backend uses Hibernate ORM to handle all database interactions with a PostgreSQL database, eliminating the need for raw SQL queries in the application code.
 
-2.Technologies Used
+Technologies Used
 Java 8 or above Apache Tomcat 9 (Servlet Container) Hibernate ORM 5.3.7 PostgreSQL 42.6.0 Driver Java Servlet API 3.1 JAXB API 2.3.1 Maven (Build Tool) JSP (JavaServer Pages) for front-end rendering HTML and CSS for UI styling
 
-3.Project Structure
+Project Structure
 The project follows a standard Maven web application layout as seen in Eclipse IDE.
 
 MyHibernateProj
@@ -62,7 +61,7 @@ MyHibernateProj
 ├── src                                   (Legacy source folder)
 ├── target                                (Compiled output and packaged WAR)
 └── pom.xml                               (Maven build and dependency configuration)
-4.Features
+Features
 User Registration with name, email, phone number, course, college name, and password
 
 User Login with session management
@@ -77,7 +76,7 @@ Session-based authentication to protect the home page
 
 Hibernate auto DDL (update mode) to auto-create or update the database table
 
-5.Database Configuration
+Database Configuration
 The database connection is configured in the file:
 
 src/main/resources/hibernate.cfg.xml
@@ -92,7 +91,7 @@ DDL Mode     : update (auto creates or updates tables)
 Show SQL     : true (prints queries in console)
 To switch to a different database such as MySQL, update the driver class, connection URL, and dialect accordingly in the same configuration file and add the appropriate Maven dependency in pom.xml.
 
-6.How to Run
+How to Run
 Step 1 - Clone or download this project to your local machine.
 
 Step 2 - Make sure PostgreSQL is running and a database is available. Update the username and password in hibernate.cfg.xml to match your local credentials.
@@ -108,7 +107,7 @@ Step 6 - Open your browser and navigate to:
 http://localhost:8080/MyHibernateProj/login
 Step 7 - Register a new account and then log in to access the student management dashboard.
 
-7.Application Flow
+Application Flow
 The user visits the login page at the /login endpoint.
 
 If the user does not have an account, they navigate to /register and fill in their details.
@@ -125,7 +124,7 @@ The user can click Delete on any row to open a confirmation modal and confirm th
 
 After any edit or delete operation, the user is redirected back to the home page with refreshed data.
 
-8.API Endpoints
+API Endpoints
 GET  /login       Renders the login form
 POST /login       Validates credentials and creates a session
 
@@ -148,4 +147,3 @@ Sessions are not explicitly invalidated on logout. Adding session.invalidate() i
 
 Author
 Developed as a practice project to demonstrate Java Servlet and Hibernate ORM integration with a PostgreSQL backend in a layered MVC architecture.
-github:https://githib.com/Ramadevi-Kattherapalle/Hibernate-project.git
