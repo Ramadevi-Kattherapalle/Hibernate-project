@@ -1,4 +1,4 @@
-Hibernate Project-Student Management System
+aHibernate Project-Student Management System
 A full-stack web application built using Java Servlets, Hibernate ORM, and PostgreSQL. This project provides complete student record management with user authentication, registration, and CRUD operations through a clean browser-based interface.
 
 Table of Contents
@@ -62,7 +62,6 @@ MyHibernateProj
 ├── src                                   (Legacy source folder)
 ├── target                                (Compiled output and packaged WAR)
 └── pom.xml                               (Maven build and dependency configuration)
-
 4.Features
 User Registration with name, email, phone number, course, college name, and password
 
