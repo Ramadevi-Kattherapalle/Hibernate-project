@@ -1,4 +1,4 @@
-# HibernateProject – Student Management System (Hibernate)
+# Hibernate-Project – Student Management System (Hibernate)
 
 A professional Java web application that performs full CRUD (Create, Read, Update, Delete) operations using Hibernate ORM with a clean layered architecture.
 This project demonstrates a complete Student Management System with JSP/Servlets frontend and Hibernate-based backend connected to a relational database.
@@ -7,7 +7,7 @@ This project demonstrates a complete Student Management System with JSP/Servlets
 
 ## 📌 Project Overview
 
-**MyHibernateProj** is a web-based Student Management System developed using Java, Hibernate, Servlets, and JSP.
+**Hibernate-Project** is a web-based Student Management System developed using Java, Hibernate, Servlets, and JSP.
 The application allows users to register, login, view, update, and delete student records while following industry-standard layered architecture (Controller, Service, DAO, Entity).
 
 This project is designed for learning Hibernate integration in real-time web applications using Maven and Apache Tomcat.
